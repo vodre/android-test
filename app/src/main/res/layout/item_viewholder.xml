@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/card_view"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp"
+	android:layout_marginTop="10dp"
+	android:layout_height="wrap_content">
+
+
+	<RelativeLayout
+		android:layout_below="@+id/label"
+		android:layout_width="match_parent"
+		android:layout_height="80dp">
+
+		<ImageView
+			android:id="@+id/owner_avatar"
+			tools:background="@color/colorPrimaryDark"
+			android:layout_width="80dp"
+			android:layout_marginEnd="10dp"
+			android:layout_height="80dp"
+			android:layout_marginRight="10dp" />
+
+
+		<RelativeLayout
+			android:layout_toRightOf="@+id/owner_avatar"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:layout_marginTop="5dp"
+				android:id="@+id/repo_title"
+				android:text="Title"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:layout_below="@+id/repo_title"
+				android:id="@+id/repo_description"
+				android:text="Description"
+				android:layout_width="wrap_content"
+				android:textStyle="normal"
+				android:layout_above="@+id/stats_layout"
+				android:layout_height="wrap_content" />
+
+			<LinearLayout
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="4dp"
+				android:id="@+id/stats_layout"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:layout_height="20dp">
+
+				<TextView
+					android:id="@+id/repo_watchers"
+					android:text=" 1233"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+				<TextView
+					android:id="@+id/repo_language"
+					android:text="Java"
+					android:layout_marginLeft="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+
+
+	</RelativeLayout>
+
+</android.support.v7.widget.CardView>

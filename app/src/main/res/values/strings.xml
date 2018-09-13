@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Code Test</string>
+    <string name="watchers"><b>Watchers: </b> </string>
+    <string name="score"><b>Score: </b> </string>
+    <string name="forks"><b>Forks: </b> </string>
+    <string name="issues"><b>Issues: </b> </string>
+    <string name="language"><b>Language: </b> </string>
+</resources>
